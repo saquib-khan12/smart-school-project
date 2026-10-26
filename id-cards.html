@@ -1,0 +1,248 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student ID Cards | Vintage School</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-icon">V</div>
+            <div>
+                <h2>Vintage School</h2>
+                <p>LEARNING TODAY, LEADING TOMORROW</p>
+            </div>
+        </div>
+
+        <p class="menu-title">MAIN MENU</p>
+
+        <nav class="navigation">
+            <a href="index.html">▦ Dashboard</a>
+            <a href="students.html">♙ Students</a>
+            <a href="teachers.html">♧ Teachers</a>
+            <a href="attendance.html">◷ Attendance</a>
+            <a href="fees.html">₹ Fees Management</a>
+            <a href="examinations.html">▤ Examinations</a>
+            <a href="timetable.html">▦ Timetable</a>
+            <a href="homework.html">✎ Homework</a>
+            <a href="library.html">▣ Library</a>
+            <a href="notices.html">♢ Notice Board</a>
+            <a href="reports.html">▥ Reports</a>
+            <a href="id-cards.html" class="active">▤ Student ID Cards</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="settings.html">⚙ Settings</a>
+            <a href="login.html">↪ Login Page</a>
+
+            <div class="school-status">
+                <span class="status-dot"></span>
+                Academic Session 2026–27
+            </div>
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <p class="breadcrumb">Pages / Student ID Cards</p>
+                <h2>ID Card Management</h2>
+            </div>
+
+            <div class="profile">
+                <div class="avatar">A</div>
+                <div>
+                    <h4>Administrator</h4>
+                    <p>School Admin</p>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- PAGE INTRO -->
+        <section class="page-intro">
+            <div>
+                <h1>Student ID Cards</h1>
+                <p>
+                    Vintage School student identity card preview
+                    and printing layout.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- STATISTICS -->
+        <section class="stats-grid">
+
+            <div class="stat-card">
+                <div class="stat-top">Total Students</div>
+                <h2>1,248</h2>
+                <p>Sample records</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-top">Cards Designed</div>
+                <h2>1,200</h2>
+                <p>Illustrative figure</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-top">Cards Pending</div>
+                <h2>48</h2>
+                <p>Illustrative figure</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-top">Academic Session</div>
+                <h2>2026–27</h2>
+                <p>School session</p>
+            </div>
+
+        </section>
+
+
+        <!-- ID CARD PREVIEW -->
+        <section class="panel id-card-section">
+
+            <div class="panel-heading">
+                <div>
+                    <h3>Student Identity Card</h3>
+                    <p>Preview of the school ID card</p>
+                </div>
+            </div>
+
+            <div class="id-card-area">
+
+                <!-- STUDENT ID CARD -->
+                <article class="student-id-card">
+
+                    <div class="id-header">
+
+                        <div class="id-school-logo">V</div>
+
+                        <div class="id-school-name">
+                            <h3>VINTAGE SCHOOL</h3>
+                            <p>LEARNING TODAY, LEADING TOMORROW</p>
+                        </div>
+
+                    </div>
+
+                    <div class="id-ribbon">
+                        STUDENT IDENTITY CARD
+                    </div>
+
+                    <!-- PHOTO PLACEHOLDER -->
+                    <div class="id-photo">
+                        <span>RK</span>
+                    </div>
+
+                    <h2 class="id-student-name">RAHUL KUMAR</h2>
+
+                    <p class="id-role">STUDENT</p>
+
+                    <div class="id-details">
+
+                        <div>
+                            <span>Admission No.</span>
+                            <strong>ADM-1001</strong>
+                        </div>
+
+                        <div>
+                            <span>Class / Section</span>
+                            <strong>10 - A</strong>
+                        </div>
+
+                        <div>
+                            <span>Roll Number</span>
+                            <strong>01</strong>
+                        </div>
+
+                        <div>
+                            <span>Blood Group</span>
+                            <strong>O+</strong>
+                        </div>
+
+                    </div>
+
+                    <div class="id-footer">
+
+                        <div>
+                            <strong>SESSION 2026–27</strong>
+                            <p>Learning Today, Leading Tomorrow</p>
+                        </div>
+
+                        <div class="id-signature">
+                            <span>Authorized Sign</span>
+                            <div></div>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- INFORMATION -->
+                <div class="id-instructions">
+
+                    <h3>About the ID Card</h3>
+
+                    <p>
+                        This student identity card represents
+                        Vintage School and its motto:
+                        Learning Today, Leading Tomorrow.
+                    </p>
+
+                    <ul>
+                        <li>Student name and photo area</li>
+                        <li>Admission number</li>
+                        <li>Class and roll number</li>
+                        <li>Blood group</li>
+                        <li>Academic session</li>
+                        <li>Authorized signature area</li>
+                    </ul>
+
+                    <p class="small-note">
+                        The student information shown is fictional
+                        sample data.
+                    </p>
+
+                    <button
+                        class="primary-button print-button"
+                        onclick="window.print()">
+                        Print ID Card
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <footer>
+            <p>© 2026 Vintage School</p>
+            <p>Learning Today, Leading Tomorrow</p>
+        </footer>
+
+    </main>
+
+</div>
+
+</body>
+</html>
+```

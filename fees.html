@@ -1,0 +1,312 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fees Management | Vintage School ERP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-icon">S</div>
+            <div>
+                <h2>Vintage School</h2>
+                <p>MANAGEMENT ERP</p>
+            </div>
+        </div>
+
+        <p class="menu-title">MAIN MENU</p>
+
+        <nav class="navigation">
+            <a href="index.html">▦ Dashboard</a>
+            <a href="students.html">♙ Students</a>
+            <a href="teachers.html">♧ Teachers</a>
+            <a href="attendance.html">◷ Attendance</a>
+            <a href="fees.html" class="active">₹ Fees Management</a>
+            <a href="examinations.html">▤ Examinations</a>
+            <a href="timetable.html">▦ Timetable</a>
+            <a href="homework.html">✎ Homework</a>
+            <a href="library.html">▣ Library</a>
+            <a href="notices.html">♢ Notice Board</a>
+            <a href="reports.html">▥ Reports</a>
+            <a href="id-cards.html">▤ Student ID Cards</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="settings.html">⚙ Settings</a>
+            <a href="login.html">↪ Login Page</a>
+            <div class="school-status">
+                <span class="status-dot"></span>
+                Academic Session 2026–27
+            </div>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <p class="breadcrumb">Pages / Fees</p>
+                <h2>Fees Management</h2>
+            </div>
+
+            <div class="profile">
+                <div class="avatar">A</div>
+                <div>
+                    <h4>Administrator</h4>
+                    <p>School Admin</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="page-intro">
+            <div>
+                <h1>Fees & Payments</h1>
+                <p>Monitor fee collection and student payment records.</p>
+            </div>
+            <a href="#record-payment" class="primary-button">
+                + Record Payment
+            </a>
+        </section>
+
+        <!-- STATISTICS -->
+        <section class="stats-grid">
+
+            <div class="stat-card">
+                <div class="stat-top">
+                    Total Expected Fees
+                    <span class="stat-icon blue">₹</span>
+                </div>
+                <h2>₹12.5L</h2>
+                <p>Illustrative amount</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-top">
+                    Fees Collected
+                    <span class="stat-icon green">✓</span>
+                </div>
+                <h2>₹8.4L</h2>
+                <p class="positive">Sample collection</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-top">
+                    Pending Fees
+                    <span class="stat-icon orange">!</span>
+                </div>
+                <h2>₹4.1L</h2>
+                <p>Illustrative balance</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-top">
+                    Paid Students
+                    <span class="stat-icon purple">♙</span>
+                </div>
+                <h2>840</h2>
+                <p>Sample student count</p>
+            </div>
+
+        </section>
+
+        <!-- COLLECTION OVERVIEW -->
+        <section class="panel fee-overview">
+            <div class="panel-heading">
+                <div>
+                    <h3>Collection Overview</h3>
+                    <p>Illustrative fee collection progress</p>
+                </div>
+                <span class="fee-percentage">67.2%</span>
+            </div>
+
+            <div class="fee-progress">
+                <div class="fee-progress-fill"></div>
+            </div>
+
+            <div class="fee-progress-labels">
+                <span>Collected: ₹8,40,000</span>
+                <span>Target: ₹12,50,000</span>
+            </div>
+        </section>
+
+        <!-- FEE RECORDS -->
+        <section class="panel">
+            <div class="panel-heading">
+                <div>
+                    <h3>Student Fee Records</h3>
+                    <p>Example payment register</p>
+                </div>
+            </div>
+
+            <div class="student-tools">
+                <form class="search-box" action="#fee-records">
+                    <input type="search"
+                           placeholder="Search student..."
+                           aria-label="Search student">
+                    <button type="submit">Search</button>
+                </form>
+
+                <select aria-label="Filter payment status">
+                    <option>All Payments</option>
+                    <option>Paid</option>
+                    <option>Pending</option>
+                    <option>Partial</option>
+                </select>
+            </div>
+
+            <div class="table-wrapper" id="fee-records">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student</th>
+                            <th>Admission No.</th>
+                            <th>Class</th>
+                            <th>Total Fee</th>
+                            <th>Paid</th>
+                            <th>Balance</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Rahul Kumar</td>
+                            <td>ADM-1001</td>
+                            <td>10-A</td>
+                            <td>₹25,000</td>
+                            <td>₹25,000</td>
+                            <td>₹0</td>
+                            <td><span class="badge present">Paid</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Ananya Sharma</td>
+                            <td>ADM-1002</td>
+                            <td>10-B</td>
+                            <td>₹25,000</td>
+                            <td>₹15,000</td>
+                            <td>₹10,000</td>
+                            <td><span class="badge partial">Partial</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Arjun Mishra</td>
+                            <td>ADM-1003</td>
+                            <td>9-A</td>
+                            <td>₹22,000</td>
+                            <td>₹0</td>
+                            <td>₹22,000</td>
+                            <td><span class="badge absent">Pending</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Neha Patel</td>
+                            <td>ADM-1004</td>
+                            <td>10-A</td>
+                            <td>₹25,000</td>
+                            <td>₹25,000</td>
+                            <td>₹0</td>
+                            <td><span class="badge present">Paid</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="small-note">
+                All records and amounts are fictional examples.
+            </p>
+        </section>
+
+        <!-- PAYMENT FORM -->
+        <section class="panel add-student-panel" id="record-payment">
+
+            <div class="panel-heading">
+                <div>
+                    <h3>Record a Payment</h3>
+                    <p>Demonstration form for fee entries</p>
+                </div>
+            </div>
+
+            <form class="student-form" action="#record-payment">
+
+                <div class="form-field">
+                    <label for="fee-student">Student Name</label>
+                    <input id="fee-student" type="text"
+                           placeholder="Enter student name" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="fee-admission">Admission Number</label>
+                    <input id="fee-admission" type="text"
+                           placeholder="e.g. ADM-1005" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="fee-amount">Payment Amount (₹)</label>
+                    <input id="fee-amount" type="number"
+                           min="1" placeholder="Enter amount" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="fee-date">Payment Date</label>
+                    <input id="fee-date" type="date" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="fee-method">Payment Method</label>
+                    <select id="fee-method" required>
+                        <option value="">Choose method</option>
+                        <option>Cash</option>
+                        <option>Bank Transfer</option>
+                        <option>UPI</option>
+                        <option>Cheque</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="fee-type">Fee Type</label>
+                    <select id="fee-type" required>
+                        <option value="">Choose fee type</option>
+                        <option>Tuition Fee</option>
+                        <option>Transport Fee</option>
+                        <option>Examination Fee</option>
+                        <option>Library Fee</option>
+                    </select>
+                </div>
+
+                <div class="form-actions">
+                    <button type="reset" class="secondary-button">
+                        Clear Form
+                    </button>
+
+                    <button type="submit" class="primary-button">
+                        Submit Demo Form
+                    </button>
+                </div>
+
+            </form>
+
+            <p class="small-note">
+                This form does not save payments or generate receipts.
+                That requires additional programming.
+            </p>
+        </section>
+
+        <footer>
+            <p>© 2026 Vintage School ERP</p>
+            <p>Fees Management Module</p>
+        </footer>
+
+    </main>
+</div>
+
+</body>
+</html>

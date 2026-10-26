@@ -1,0 +1,602 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Students | Vintage School ERP</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-icon">S</div>
+
+            <div>
+                <h2>Vintage School</h2>
+                <p>MANAGEMENT ERP</p>
+            </div>
+        </div>
+
+        <p class="menu-title">MAIN MENU</p>
+
+        <nav class="navigation">
+
+            <a href="index.html">▦ Dashboard</a>
+            <a href="students.html" class="active">♙ Students</a>
+            <a href="teachers.html">♧ Teachers</a>
+            <a href="attendance.html">◷ Attendance</a>
+            <a href="fees.html">₹ Fees Management</a>
+            <a href="examinations.html">▤ Examinations</a>
+            <a href="timetable.html">▦ Timetable</a>
+            <a href="homework.html">✎ Homework</a>
+            <a href="library.html">▣ Library</a>
+            <a href="notices.html">♢ Notice Board</a>
+            <a href="reports.html">▥ Reports</a>
+            <a href="id-cards.html">▤ Student ID Cards</a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <a href="settings.html">⚙ Settings</a>
+            <a href="login.html">↪ Login Page</a>
+
+            <div class="school-status">
+                <span class="status-dot"></span>
+                Academic Session 2026–27
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-content">
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+            <div>
+                <p class="breadcrumb">Pages / Students</p>
+                <h2>Student Management</h2>
+            </div>
+
+            <div class="profile">
+
+                <div class="avatar">A</div>
+
+                <div>
+                    <h4>Administrator</h4>
+                    <p>School Admin</p>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- PAGE INTRODUCTION -->
+
+        <section class="page-intro">
+
+            <div>
+                <h1>Students</h1>
+
+                <p>
+                    Manage student profiles, admission records,
+                    and class information.
+                </p>
+            </div>
+
+            <a href="#add-student" class="primary-button">
+                + Add Student
+            </a>
+
+        </section>
+
+
+        <!-- STATISTICS -->
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+                <div class="stat-top">
+                    Total Students
+                    <span class="stat-icon blue">♙</span>
+                </div>
+
+                <h2>1,248</h2>
+                <p class="positive">All enrolled students</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-top">
+                    Boys
+                    <span class="stat-icon purple">♟</span>
+                </div>
+
+                <h2>682</h2>
+                <p>Sample student records</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-top">
+                    Girls
+                    <span class="stat-icon green">♙</span>
+                </div>
+
+                <h2>566</h2>
+                <p>Sample student records</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-top">
+                    New Admissions
+                    <span class="stat-icon orange">+</span>
+                </div>
+
+                <h2>86</h2>
+                <p>Illustrative yearly figure</p>
+            </div>
+
+        </section>
+
+
+        <!-- SEARCH AND FILTERS -->
+
+        <section class="panel">
+
+            <div class="panel-heading">
+
+                <div>
+                    <h3>All Students</h3>
+                    <p>Browse student admission records</p>
+                </div>
+
+            </div>
+
+            <div class="student-tools">
+
+                <form class="search-box" action="#student-list">
+
+                    <input
+                        type="search"
+                        placeholder="Search student name..."
+                        aria-label="Search student name">
+
+                    <button type="submit">Search</button>
+
+                </form>
+
+                <select aria-label="Filter by class">
+                    <option value="">All Classes</option>
+                    <option>Class 9</option>
+                    <option>Class 10</option>
+                    <option>Class 11</option>
+                    <option>Class 12</option>
+                </select>
+
+                <select aria-label="Filter by status">
+                    <option value="">All Statuses</option>
+                    <option>Active</option>
+                    <option>Inactive</option>
+                </select>
+
+            </div>
+
+
+            <!-- STUDENT TABLE -->
+
+            <div class="table-wrapper" id="student-list">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Student</th>
+                            <th>Admission No.</th>
+                            <th>Class</th>
+                            <th>Parent / Guardian</th>
+                            <th>Status</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>
+                                <div class="student-name">
+                                    <span class="student-avatar">RK</span>
+                                    Rahul Kumar
+                                </div>
+                            </td>
+
+                            <td>ADM-1001</td>
+                            <td>10-A</td>
+                            <td>Rajesh Kumar</td>
+
+                            <td>
+                                <span class="badge present">Active</span>
+                            </td>
+
+                            <td>
+                                <a href="#student-1001" class="view-link">
+                                    View
+                                </a>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                                <div class="student-name">
+                                    <span class="student-avatar purple">AS</span>
+                                    Ananya Sharma
+                                </div>
+                            </td>
+
+                            <td>ADM-1002</td>
+                            <td>10-B</td>
+                            <td>Sunil Sharma</td>
+
+                            <td>
+                                <span class="badge present">Active</span>
+                            </td>
+
+                            <td>
+                                <a href="#student-1002" class="view-link">
+                                    View
+                                </a>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                                <div class="student-name">
+                                    <span class="student-avatar orange">AM</span>
+                                    Arjun Mishra
+                                </div>
+                            </td>
+
+                            <td>ADM-1003</td>
+                            <td>9-A</td>
+                            <td>Vijay Mishra</td>
+
+                            <td>
+                                <span class="badge present">Active</span>
+                            </td>
+
+                            <td>
+                                <a href="#student-1003" class="view-link">
+                                    View
+                                </a>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                                <div class="student-name">
+                                    <span class="student-avatar green">NP</span>
+                                    Neha Patel
+                                </div>
+                            </td>
+
+                            <td>ADM-1004</td>
+                            <td>10-A</td>
+                            <td>Amit Patel</td>
+
+                            <td>
+                                <span class="badge present">Active</span>
+                            </td>
+
+                            <td>
+                                <a href="#student-1004" class="view-link">
+                                    View
+                                </a>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <p class="small-note">
+                Demo records only. No real student information is stored.
+            </p>
+
+        </section>
+
+
+        <!-- ADD STUDENT FORM -->
+
+        <section class="panel add-student-panel" id="add-student">
+
+            <div class="panel-heading">
+
+                <div>
+                    <h3>Add New Student</h3>
+
+                    <p>
+                        Enter the information below to preview an admission form.
+                    </p>
+                </div>
+
+            </div>
+
+            <form class="student-form" action="#add-student">
+
+                <div class="form-field">
+                    <label for="student-name">Student Full Name</label>
+
+                    <input
+                        type="text"
+                        id="student-name"
+                        placeholder="Enter full name"
+                        required>
+                </div>
+
+                <div class="form-field">
+                    <label for="admission-number">Admission Number</label>
+
+                    <input
+                        type="text"
+                        id="admission-number"
+                        placeholder="e.g. ADM-1005"
+                        required>
+                </div>
+
+                <div class="form-field">
+                    <label for="class">Class</label>
+
+                    <select id="class" required>
+                        <option value="">Select class</option>
+                        <option>Class 9</option>
+                        <option>Class 10</option>
+                        <option>Class 11</option>
+                        <option>Class 12</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="section">Section</label>
+
+                    <select id="section" required>
+                        <option value="">Select section</option>
+                        <option>A</option>
+                        <option>B</option>
+                        <option>C</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="guardian">Parent / Guardian Name</label>
+
+                    <input
+                        type="text"
+                        id="guardian"
+                        placeholder="Enter guardian name"
+                        required>
+                </div>
+
+                <div class="form-field">
+                    <label for="admission-date">Admission Date</label>
+
+                    <input
+                        type="date"
+                        id="admission-date"
+                        required>
+                </div>
+
+                <div class="form-actions">
+
+                    <button type="reset" class="secondary-button">
+                        Clear Form
+                    </button>
+
+                    <button type="submit" class="primary-button">
+                        Preview Submission
+                    </button>
+
+                </div>
+
+            </form>
+
+            <p class="small-note">
+                HTML and CSS cannot save this form to the student table.
+                The submission button is only a demonstration.
+            </p>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+            <p>© 2026 Vintage School ERP</p>
+            <p>Student Management Module</p>
+        </footer>
+
+    </main>
+
+</div>
+
+</body>
+</html>
+```
+
+/* VINTAGE SCHOOL - WEEKLY TIMETABLE */
+
+.timetable-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 22px;
+}
+
+.timetable-info > div {
+    padding: 15px;
+    background: #f5f7fb;
+    border: 1px solid #e1e7f0;
+    border-radius: 10px;
+}
+
+.timetable-info span {
+    display: block;
+    color: #778195;
+    font-size: 10px;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.timetable-info strong {
+    color: #14213d;
+    font-size: 13px;
+}
+
+.weekly-table {
+    min-width: 850px;
+    border-collapse: separate;
+    border-spacing: 4px;
+}
+
+.weekly-table th,
+.weekly-table td {
+    padding: 12px 8px;
+    text-align: center;
+    font-size: 11px;
+    border: none;
+}
+
+.weekly-table thead th {
+    background: #14213d;
+    color: #ffffff;
+}
+
+.weekly-table tbody th {
+    background: #edf1f8;
+    color: #14213d;
+    white-space: nowrap;
+}
+
+.subject {
+    display: block;
+    padding: 9px 5px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.math {
+    background: #e0e7ff;
+    color: #3730a3;
+}
+
+.science {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.english {
+    background: #fce7f3;
+    color: #9d174d;
+}
+
+.social {
+    background: #ffedd5;
+    color: #9a3412;
+}
+
+.computer {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.hindi {
+    background: #f3e8ff;
+    color: #7e22ce;
+}
+
+.activity {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.break-row td {
+    background: #fff4cc;
+    color: #805b00;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.subject-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.subject-legend span {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 12px;
+    color: #475569;
+}
+
+.legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.math-dot {
+    background: #6366f1;
+}
+
+.science-dot {
+    background: #22c55e;
+}
+
+.english-dot {
+    background: #ec4899;
+}
+
+.social-dot {
+    background: #f97316;
+}
+
+.computer-dot {
+    background: #3b82f6;
+}
+
+.hindi-dot {
+    background: #a855f7;
+}
+
+.activity-dot {
+    background: #eab308;
+}
+
+@media (max-width: 760px) {
+    .timetable-info {
+        grid-template-columns: 1fr;
+    }
+}

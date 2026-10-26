@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library | Vintage School</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="layout">
+
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-icon">📚</div>
+            <div>
+                <h2>Vintage School</h2>
+                <p>LEARN TODAY, LEAD TOMORROW</p>
+            </div>
+        </div>
+
+        <p class="menu-title">MAIN MENU</p>
+
+        <nav class="navigation">
+            <a href="index.html">▦ Dashboard</a>
+            <a href="students.html">♙ Students</a>
+            <a href="teachers.html">♧ Teachers</a>
+            <a href="attendance.html">◷ Attendance</a>
+            <a href="fees.html">₹ Fees Management</a>
+            <a href="examinations.html">▤ Examinations</a>
+            <a href="timetable.html">▦ Timetable</a>
+            <a href="homework.html">✎ Homework</a>
+            <a href="library.html" class="active">▣ Library</a>
+            <a href="notices.html">♢ Notice Board</a>
+            <a href="reports.html">▥ Reports</a>
+            <a href="id-cards.html">▤ Student ID Cards</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="settings.html">⚙ Settings</a>
+            <a href="login.html">↪ Login Page</a>
+            <div class="school-status">
+                ● Academic Session 2026–27
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <p class="breadcrumb">Pages / Library</p>
+                <h2>Library Management</h2>
+            </div>
+
+            <div class="profile">
+                <div class="avatar">A</div>
+                <div>
+                    <h4>Administrator</h4>
+                    <p>School Admin</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="page-intro">
+            <div>
+                <h1>School Library</h1>
+                <p>Manage books, availability, and borrowing records.</p>
+            </div>
+
+            <a href="#add-book" class="primary-button">
+                + Add New Book
+            </a>
+        </section>
+
+        <!-- SUMMARY CARDS -->
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+                <div class="stat-top">Total Books</div>
+                <h2>1,250</h2>
+                <p>Sample library collection</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-top">Available Books</div>
+                <h2>980</h2>
+                <p>Illustrative count</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-top">Books Issued</div>
+                <h2>240</h2>
+                <p>Illustrative count</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-top">Overdue Returns</div>
+                <h2>30</h2>
+                <p>Sample records</p>
+            </div>
+
+        </section>
+
+        <!-- BOOK REGISTER -->
+
+        <section class="panel">
+
+            <div class="panel-heading">
+                <div>
+                    <h3>Book Register</h3>
+                    <p>Sample records from the school library</p>
+                </div>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Book ID</th>
+                            <th>Book Title</th>
+                            <th>Author</th>
+                            <th>Category</th>
+                            <th>Copies</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>BK001</td>
+                            <td>Mathematics - Class 10</td>
+                            <td>R. Sharma</td>
+                            <td>Textbook</td>
+                            <td>25</td>
+                            <td><span class="badge present">Available</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>BK002</td>
+                            <td>Science Explorer</td>
+                            <td>A. Verma</td>
+                            <td>Science</td>
+                            <td>18</td>
+                            <td><span class="badge present">Available</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>BK003</td>
+                            <td>Wings of Fire</td>
+                            <td>A. P. J. Abdul Kalam</td>
+                            <td>Biography</td>
+                            <td>0</td>
+                            <td><span class="badge absent">Out of Stock</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>BK004</td>
+                            <td>English Grammar</td>
+                            <td>Wren & Martin</td>
+                            <td>Reference</td>
+                            <td>12</td>
+                            <td><span class="badge present">Available</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>BK005</td>
+                            <td>Discovery of India</td>
+                            <td>Jawaharlal Nehru</td>
+                            <td>History</td>
+                            <td>8</td>
+                            <td><span class="badge partial">Limited Stock</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="small-note">
+                The book records and stock quantities are fictional examples.
+            </p>
+
+        </section>
+
+        <!-- ISSUE REGISTER -->
+
+        <section class="panel">
+
+            <div class="panel-heading">
+                <div>
+                    <h3>Book Issue Register</h3>
+                    <p>Example borrowing and return records</p>
+                </div>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student</th>
+                            <th>Book</th>
+                            <th>Issue Date</th>
+                            <th>Return Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Aarav Singh</td>
+                            <td>Science Explorer</td>
+                            <td>20 Oct 2026</td>
+                            <td>30 Oct 2026</td>
+                            <td><span class="badge present">Issued</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Ananya Verma</td>
+                            <td>Wings of Fire</td>
+                            <td>10 Oct 2026</td>
+                            <td>20 Oct 2026</td>
+                            <td><span class="badge absent">Overdue</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Rohan Gupta</td>
+                            <td>English Grammar</td>
+                            <td>22 Oct 2026</td>
+                            <td>01 Nov 2026</td>
+                            <td><span class="badge present">Issued</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+        <!-- ADD BOOK FORM -->
+
+        <section class="panel add-student-panel" id="add-book">
+
+            <div class="panel-heading">
+                <div>
+                    <h3>Add a New Book</h3>
+                    <p>Enter book details for the library register.</p>
+                </div>
+            </div>
+
+            <form class="student-form" action="#add-book">
+
+                <div class="form-field">
+                    <label for="book-id">Book ID</label>
+                    <input id="book-id" type="text"
+                           placeholder="e.g. BK006" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="book-title">Book Title</label>
+                    <input id="book-title" type="text"
+                           placeholder="Enter book title" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="book-author">Author</label>
+                    <input id="book-author" type="text"
+                           placeholder="Enter author name" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="book-category">Category</label>
+                    <select id="book-category" required>
+                        <option value="">Select category</option>
+                        <option>Textbook</option>
+                        <option>Science</option>
+                        <option>Biography</option>
+                        <option>Reference</option>
+                        <option>History</option>
+                        <option>Fiction</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="book-copies">Number of Copies</label>
+                    <input id="book-copies" type="number"
+                           min="0" placeholder="Enter quantity" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="book-location">Shelf Number</label>
+                    <input id="book-location" type="text"
+                           placeholder="e.g. Shelf A3">
+                </div>
+
+                <div class="form-actions">
+                    <button type="reset" class="secondary-button">
+                        Clear Form
+                    </button>
+
+                    <button type="submit" class="primary-button">
+                        Add Book
+                    </button>
+                </div>
+
+            </form>
+
+            <p class="small-note">
+                This demonstration form does not save books or update stock.
+            </p>
+
+        </section>
+
+        <footer>
+            <p>© 2026 Vintage School</p>
+            <p>Learn Today, Lead Tomorrow</p>
+        </footer>
+
+    </main>
+</div>
+
+</body>
+</html>

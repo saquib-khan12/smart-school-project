@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework | Vintage School</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-icon">📚</div>
+            <div>
+                <h2>Vintage School</h2>
+                <p>LEARN TODAY, LEAD TOMORROW</p>
+            </div>
+        </div>
+
+        <p class="menu-title">MAIN MENU</p>
+
+        <nav class="navigation">
+            <a href="index.html">▦ Dashboard</a>
+            <a href="students.html">♙ Students</a>
+            <a href="teachers.html">♧ Teachers</a>
+            <a href="attendance.html">◷ Attendance</a>
+            <a href="fees.html">₹ Fees Management</a>
+            <a href="examinations.html">▤ Examinations</a>
+            <a href="timetable.html">▦ Timetable</a>
+            <a href="homework.html" class="active">✎ Homework</a>
+            <a href="library.html">▣ Library</a>
+            <a href="notices.html">♢ Notice Board</a>
+            <a href="reports.html">▥ Reports</a>
+            <a href="id-cards.html">▤ Student ID Cards</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="settings.html">⚙ Settings</a>
+            <a href="login.html">↪ Login Page</a>
+            <div class="school-status">
+                ● Academic Session 2026–27
+            </div>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <p class="breadcrumb">Pages / Homework</p>
+                <h2>Homework Management</h2>
+            </div>
+
+            <div class="profile">
+                <div class="avatar">A</div>
+                <div>
+                    <h4>Administrator</h4>
+                    <p>School Admin</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="page-intro">
+            <div>
+                <h1>Homework & Assignments</h1>
+                <p>Manage assignments, deadlines, and student submissions.</p>
+            </div>
+            <a href="#add-homework" class="primary-button">
+                + Assign Homework
+            </a>
+        </section>
+
+        <!-- SUMMARY CARDS -->
+        <section class="stats-grid">
+
+            <div class="stat-card">
+                <div class="stat-top">Total Assignments</div>
+                <h2>24</h2>
+                <p>Sample records</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-top">Submitted</div>
+                <h2>186</h2>
+                <p>Illustrative submissions</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-top">Pending</div>
+                <h2>42</h2>
+                <p>Illustrative count</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-top">Overdue Tasks</div>
+                <h2>8</h2>
+                <p>Sample records</p>
+            </div>
+
+        </section>
+
+        <!-- HOMEWORK TABLE -->
+        <section class="panel">
+
+            <div class="panel-heading">
+                <div>
+                    <h3>Assignment Register</h3>
+                    <p>Example homework records for Class 10</p>
+                </div>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Assignment</th>
+                            <th>Subject</th>
+                            <th>Teacher</th>
+                            <th>Assigned Date</th>
+                            <th>Due Date</th>
+                            <th>Submissions</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Quadratic Equations</td>
+                            <td>Mathematics</td>
+                            <td>Mrs. Priya</td>
+                            <td>20 Oct 2026</td>
+                            <td>28 Oct 2026</td>
+                            <td>35 / 40</td>
+                            <td><span class="badge present">Active</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Light Reflection</td>
+                            <td>Science</td>
+                            <td>Mr. Amit</td>
+                            <td>21 Oct 2026</td>
+                            <td>29 Oct 2026</td>
+                            <td>30 / 40</td>
+                            <td><span class="badge present">Active</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Essay Writing</td>
+                            <td>English</td>
+                            <td>Ms. Neha</td>
+                            <td>15 Oct 2026</td>
+                            <td>22 Oct 2026</td>
+                            <td>38 / 40</td>
+                            <td><span class="badge absent">Overdue</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Nationalism in India</td>
+                            <td>Social Science</td>
+                            <td>Mr. Rahul</td>
+                            <td>22 Oct 2026</td>
+                            <td>30 Oct 2026</td>
+                            <td>20 / 40</td>
+                            <td><span class="badge partial">In Progress</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>HTML Basics</td>
+                            <td>Computer</td>
+                            <td>Ms. Anjali</td>
+                            <td>23 Oct 2026</td>
+                            <td>31 Oct 2026</td>
+                            <td>25 / 40</td>
+                            <td><span class="badge present">Active</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="small-note">
+                All assignments and submission figures are fictional examples.
+            </p>
+
+        </section>
+
+        <!-- ASSIGN HOMEWORK FORM -->
+        <section class="panel add-student-panel" id="add-homework">
+
+            <div class="panel-heading">
+                <div>
+                    <h3>Assign New Homework</h3>
+                    <p>Fill in the details for a new assignment.</p>
+                </div>
+            </div>
+
+            <form class="student-form" action="#add-homework">
+
+                <div class="form-field">
+                    <label for="hw-title">Assignment Title</label>
+                    <input id="hw-title" type="text"
+                           placeholder="e.g. Algebra Practice" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="hw-class">Class</label>
+                    <select id="hw-class" required>
+                        <option value="">Select class</option>
+                        <option>Class 8</option>
+                        <option>Class 9</option>
+                        <option>Class 10</option>
+                        <option>Class 11</option>
+                        <option>Class 12</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="hw-subject">Subject</label>
+                    <select id="hw-subject" required>
+                        <option value="">Select subject</option>
+                        <option>Mathematics</option>
+                        <option>Science</option>
+                        <option>English</option>
+                        <option>Social Science</option>
+                        <option>Hindi</option>
+                        <option>Computer</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="hw-teacher">Teacher Name</label>
+                    <input id="hw-teacher" type="text"
+                           placeholder="Enter teacher name" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="hw-assigned">Assigned Date</label>
+                    <input id="hw-assigned" type="date" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="hw-due">Due Date</label>
+                    <input id="hw-due" type="date" required>
+                </div>
+
+                <div class="form-field full-width">
+                    <label for="hw-description">Instructions</label>
+                    <textarea id="hw-description" rows="4"
+                              placeholder="Write homework instructions here..."
+                              required></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="reset" class="secondary-button">
+                        Clear Form
+                    </button>
+                    <button type="submit" class="primary-button">
+                        Assign Homework
+                    </button>
+                </div>
+
+            </form>
+
+            <p class="small-note">
+                This is a demonstration form. It does not save assignments.
+            </p>
+
+        </section>
+
+        <footer>
+            <p>© 2026 Vintage School</p>
+            <p>Learn Today, Lead Tomorrow</p>
+        </footer>
+
+    </main>
+</div>
+
+</body>
+</html>

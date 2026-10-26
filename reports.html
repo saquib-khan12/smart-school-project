@@ -1,0 +1,355 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports & Analytics | Vintage School</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-icon">📚</div>
+            <div>
+                <h2>Vintage School</h2>
+                <p>LEARN TODAY, LEAD TOMORROW</p>
+            </div>
+        </div>
+
+        <p class="menu-title">MAIN MENU</p>
+
+        <nav class="navigation">
+            <a href="index.html">▦ Dashboard</a>
+            <a href="students.html">♙ Students</a>
+            <a href="teachers.html">♧ Teachers</a>
+            <a href="attendance.html">◷ Attendance</a>
+            <a href="fees.html">₹ Fees Management</a>
+            <a href="examinations.html">▤ Examinations</a>
+            <a href="timetable.html">▦ Timetable</a>
+            <a href="homework.html">✎ Homework</a>
+            <a href="library.html">▣ Library</a>
+            <a href="notices.html">♢ Notice Board</a>
+            <a href="reports.html" class="active">▥ Reports</a>
+            <a href="id-cards.html">▤ Student ID Cards</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="settings.html">⚙ Settings</a>
+            <a href="login.html">↪ Login Page</a>
+            <div class="school-status">
+                ● Academic Session 2026–27
+            </div>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <p class="breadcrumb">Pages / Reports</p>
+                <h2>Reports & Analytics</h2>
+            </div>
+
+            <div class="profile">
+                <div class="avatar">A</div>
+                <div>
+                    <h4>Administrator</h4>
+                    <p>School Admin</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="page-intro">
+            <div>
+                <h1>School Performance</h1>
+                <p>View academic, attendance, and fee statistics.</p>
+            </div>
+
+            <button class="primary-button"
+                    onclick="window.print()">
+                Print Report
+            </button>
+        </section>
+
+        <!-- SUMMARY CARDS -->
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+                <div class="stat-top">Total Students</div>
+                <h2>1,240</h2>
+                <p>Sample student count</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-top">Average Attendance</div>
+                <h2>94%</h2>
+                <p>Illustrative percentage</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-top">Pass Percentage</div>
+                <h2>92%</h2>
+                <p>Illustrative examination result</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-top">Fees Collected</div>
+                <h2>₹18.5L</h2>
+                <p>Example collection figure</p>
+            </div>
+
+        </section>
+
+        <!-- ATTENDANCE REPORT -->
+
+        <section class="report-grid">
+
+            <div class="panel">
+                <div class="panel-heading">
+                    <div>
+                        <h3>Attendance Overview</h3>
+                        <p>Illustrative attendance by class</p>
+                    </div>
+                </div>
+
+                <div class="progress-report">
+
+                    <div class="progress-item">
+                        <div class="progress-label">
+                            <span>Class 6</span>
+                            <strong>91%</strong>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill fill-blue"
+                                 style="width: 91%"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-item">
+                        <div class="progress-label">
+                            <span>Class 7</span>
+                            <strong>94%</strong>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill fill-green"
+                                 style="width: 94%"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-item">
+                        <div class="progress-label">
+                            <span>Class 8</span>
+                            <strong>89%</strong>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill fill-gold"
+                                 style="width: 89%"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-item">
+                        <div class="progress-label">
+                            <span>Class 9</span>
+                            <strong>96%</strong>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill fill-purple"
+                                 style="width: 96%"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-item">
+                        <div class="progress-label">
+                            <span>Class 10</span>
+                            <strong>94%</strong>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill fill-blue"
+                                 style="width: 94%"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- PERFORMANCE CHART -->
+
+            <div class="panel">
+                <div class="panel-heading">
+                    <div>
+                        <h3>Academic Performance</h3>
+                        <p>Example average marks by subject</p>
+                    </div>
+                </div>
+
+                <div class="bar-chart">
+
+                    <div class="chart-column">
+                        <div class="chart-bar bar-math"
+                             style="height: 85%">
+                            <span>85%</span>
+                        </div>
+                        <span class="chart-label">Maths</span>
+                    </div>
+
+                    <div class="chart-column">
+                        <div class="chart-bar bar-science"
+                             style="height: 90%">
+                            <span>90%</span>
+                        </div>
+                        <span class="chart-label">Science</span>
+                    </div>
+
+                    <div class="chart-column">
+                        <div class="chart-bar bar-english"
+                             style="height: 78%">
+                            <span>78%</span>
+                        </div>
+                        <span class="chart-label">English</span>
+                    </div>
+
+                    <div class="chart-column">
+                        <div class="chart-bar bar-social"
+                             style="height: 88%">
+                            <span>88%</span>
+                        </div>
+                        <span class="chart-label">Social Sci.</span>
+                    </div>
+
+                    <div class="chart-column">
+                        <div class="chart-bar bar-computer"
+                             style="height: 95%">
+                            <span>95%</span>
+                        </div>
+                        <span class="chart-label">Computer</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- FEE COLLECTION -->
+
+        <section class="panel">
+
+            <div class="panel-heading">
+                <div>
+                    <h3>Fee Collection Summary</h3>
+                    <p>Illustrative academic-year fee figures</p>
+                </div>
+            </div>
+
+            <div class="fee-report-grid">
+
+                <div class="fee-report-item">
+                    <span>Total Fees Expected</span>
+                    <h2>₹25,00,000</h2>
+                </div>
+
+                <div class="fee-report-item">
+                    <span>Fees Collected</span>
+                    <h2>₹18,50,000</h2>
+                </div>
+
+                <div class="fee-report-item">
+                    <span>Outstanding Balance</span>
+                    <h2>₹6,50,000</h2>
+                </div>
+
+            </div>
+
+            <div class="progress-track fee-progress">
+                <div class="progress-fill fill-green"
+                     style="width: 74%"></div>
+            </div>
+
+            <p class="small-note">
+                Example collection progress: 74% of expected fees.
+            </p>
+
+        </section>
+
+        <!-- CLASS SUMMARY -->
+
+        <section class="panel">
+
+            <div class="panel-heading">
+                <div>
+                    <h3>Class Performance Report</h3>
+                    <p>Example examination results</p>
+                </div>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Class</th>
+                            <th>Students</th>
+                            <th>Attendance</th>
+                            <th>Average Marks</th>
+                            <th>Pass Rate</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Class 8</td>
+                            <td>210</td>
+                            <td>89%</td>
+                            <td>78%</td>
+                            <td>90%</td>
+                        </tr>
+
+                        <tr>
+                            <td>Class 9</td>
+                            <td>235</td>
+                            <td>96%</td>
+                            <td>84%</td>
+                            <td>94%</td>
+                        </tr>
+
+                        <tr>
+                            <td>Class 10</td>
+                            <td>240</td>
+                            <td>94%</td>
+                            <td>86%</td>
+                            <td>92%</td>
+                        </tr>
+
+                        <tr>
+                            <td>Class 11</td>
+                            <td>190</td>
+                            <td>91%</td>
+                            <td>80%</td>
+                            <td>89%</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="small-note">
+                All statistics are fictional demonstration data.
+            </p>
+
+        </section>
+
+        <footer>
+            <p>© 2026 Vintage School</p>
+            <p>Learn Today, Lead Tomorrow</p>
+        </footer>
+
+    </main>
+</div>
+
+</body>
+</html>
